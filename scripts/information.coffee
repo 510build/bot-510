@@ -12,6 +12,9 @@ module.exports = (robot) ->
 〒730-0015
 広島県広島市中区橋本町１０−１ 橋本町５１０ビル ４０８号
 ファナフェクト株式会社
+バウハウス
 
-http://funaffect.jp/top/address
+http://www.funaffect.jp/
+http://bauhaus-web.jp/
+
   """
