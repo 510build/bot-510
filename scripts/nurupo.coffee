@@ -2,8 +2,7 @@
 #   ぬるぽ
 #
 # Commands:
-#   ぬるぽ
-#
+# hubot ぬるぽ - 殴られたいとき
 
 module.exports = (robot) ->
   robot.respond /^ぬるぽ$/i, (msg) ->
