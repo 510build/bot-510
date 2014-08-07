@@ -7,4 +7,4 @@ deploy:
 notifications:
   slack:
     rooms:
-      - 510b:zX0Dw7mJAKCkL97iwHARLKQt#random
+      - 510b:zX0Dw7mJAKCkL97iwHARLKQt#bit
