@@ -5,7 +5,7 @@
 # hubot ぬるぽ - 殴られたいとき
 
 module.exports = (robot) ->
-  robot.respond /^ぬるぽ$/i, (msg) ->
+  robot.respond /ぬるぽ$/i, (msg) ->
     response = ""
     response += "　　Λ＿Λ　　＼＼"
     response += "　 （　・∀・）　　　|　|　ｶﾞｯ"
