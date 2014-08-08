@@ -30,6 +30,7 @@
     "npm": ">= 1.1.x"
   },
   "devDependencies": {
-    "eastasianwidth": "^0.1.0"
+    "eastasianwidth": "^0.1.0",
+    "redis": "^0.11.0"
   }
 }

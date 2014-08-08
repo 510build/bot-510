@@ -78,6 +78,14 @@ progress = [
   "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/21.jpg"
 ]
 
+bad = [
+  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/0.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/1.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/2.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/3.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/4.gif"
+]
+
 eastasianwidth = require 'eastasianwidth'
 
 strpad = (str, count) ->
@@ -133,6 +141,9 @@ module.exports = (robot) ->
 
   robot.hear /進捗どうですか/, (msg) ->
     msg.send msg.random progress
+
+  robot.hear /進捗ダメです/, (msg) ->
+    msg.send msg.random bad
 
   robot.hear /突然の(.*)$/i, (msg) ->
     message = msg.match[1].replace /^\s+|\s+$/g, ''
