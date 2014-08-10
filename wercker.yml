@@ -20,6 +20,8 @@ build:
         token: hIhXjBu7YajibWgjG6EMtQXV
         channel: 510bot-dev
 deploy:
+  steps:
+    - heroku-deploy
   after-steps:
     - eiel/pretty-slack-notify:
         team: 510b
