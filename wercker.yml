@@ -19,3 +19,9 @@ build:
         team: 510b
         token: hIhXjBu7YajibWgjG6EMtQXV
         channel: 510bot-dev
+deploy:
+  after-steps:
+    - eiel/pretty-slack-notify:
+        team: 510b
+        token: hIhXjBu7YajibWgjG6EMtQXV
+        channel: 510bot-dev
