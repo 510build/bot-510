@@ -18,4 +18,4 @@ build:
     - eiel/pretty-slack-notify:
         team: 510b
         token: hIhXjBu7YajibWgjG6EMtQXV
-        channel: bit
+        channel: 510bot-dev
