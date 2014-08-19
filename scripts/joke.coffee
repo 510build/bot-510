@@ -100,20 +100,6 @@ String::toArray = ->
     i++
   array
 
-module.exports = (robot) ->
-  robot.hear /ぬるぽ/, (msg) ->
-    msg.send """
-```
-   Λ＿Λ     ＼＼
-（  ・∀・）  | | ｶﾞｯ
- と     ）  | |
-  Ｙ /ノ     人
-   / ）    < >   _Λ  ∩
-＿/し'   ／／  Ｖ｀Д´）/
-（＿フ彡             / ←>> @#{msg.message.user.name}
-```
-  """
-
   robot.respond /(like|いいね|ありがとう|thx|おーい|ちゃん|が|は)/i, (msg) ->
     msg.send msg.random botchan_tsundere
 
