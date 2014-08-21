@@ -17,6 +17,7 @@ build:
   after-steps:
     - eiel/pretty-slack-notify:
         team: '510b'
+        token: $SLACK_API_TOKEN
         channel: '510bot-dev'
 deploy:
   steps:
@@ -24,4 +25,5 @@ deploy:
   after-steps:
     - eiel/pretty-slack-notify:
         team: '510b'
+        token: $SLACK_API_TOKEN
         channel: '510bot-dev'
