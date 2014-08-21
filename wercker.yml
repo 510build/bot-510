@@ -16,14 +16,12 @@ build:
           echo "npm version $(npm -v) running"
   after-steps:
     - eiel/pretty-slack-notify:
-        team: 510b
-        token: hIhXjBu7YajibWgjG6EMtQXV
-        channel: 510bot-dev
+        team: '510b'
+        channel: '510bot-dev'
 deploy:
   steps:
     - heroku-deploy
   after-steps:
     - eiel/pretty-slack-notify:
-        team: 510b
-        token: hIhXjBu7YajibWgjG6EMtQXV
-        channel: 510bot-dev
+        team: '510b'
+        channel: '510bot-dev'
