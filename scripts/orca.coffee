@@ -29,7 +29,7 @@ module.exports = (robot) ->
 
   putList = (msg) ->
     orca = robot.brain.get("orca")
-    text = "MACアドレスの一覧やで。\n"
+    text = "MACアドレスの一覧です〜\n"
     for mac, user of orca.members
       text += "#{user} : #{mac}\n"
     msg.send text
@@ -82,5 +82,5 @@ module.exports = (robot) ->
       text = "事務所には\n"
       for user in users
         text += "* @#{user}\n"
-      text += "がいるよ。"
+      text += "がいるよ！"
     msg.send text
