@@ -2,10 +2,22 @@
 #   Joke commands.
 #
 # Commands:
-#   ぬるぽ - You reply with, "ｶﾞｯ" When you post a "ぬるぽ" word.
+#   joke - 各種取り揃えております。
 #
 # Notes:
 #   ネタ/ジョーク系のbot全般
+
+omaeha = [
+  "https://dl.dropboxusercontent.com/s/duj2wgbyaqge45b/6f0e791f.jpg",
+]
+
+ktkr_text = [
+  "ｷﾀ━━ﾟ+.ヽ(≧▽≦)ﾉ.+ﾟ━━ ｯ !!!",
+  "ｷﾀ━━(━(━(-( ( (ﾟ∀ﾟ) ) )-)━)━) ━━ !!!!!",
+  "ｷﾀ━━━ε=ε=ε=(*ﾉ´Д`)ﾉﾟ.+:｡　∑(ﾟДﾟﾉ)ﾉｸﾙﾅｧ━━━━!!",
+  "ｷﾀ━━━━(Дﾟ(○=(ﾟ∀ﾟ)=○)Дﾟ)━━━━━!!",
+  "ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!",
+]
 
 botchan_tsundere = [
   "いつも構ってくれて、どうもありがとう。",
@@ -53,39 +65,6 @@ takasan = [
   "< 参考になります！"
 ]
 
-progress = [
-  'http://livedoor.blogimg.jp/matometters/imgs/4/c/4cc416b4.jpg'
-  'http://forum.shimarin.com/uploads/default/3/5a6b5c05cceb7cf3.png'
-  'http://37.media.tumblr.com/3497ded6d8b569cfe0d0152f8fc6bc9d/tumblr_mzyaeoXEIS1sckns5o1_500.jpg'
-  'http://draque-ch.com/wp-content/uploads/2014/06/bf80ec2b93465957a856e13a131555be.jpg'
-  'http://forum.shimarin.com/uploads/default/6/8b3c7003765d0f2e.jpg'
-  'http://38.media.tumblr.com/31ab4065305e3607b951332dde32b789/tumblr_mrkrlyMMIU1sckns5o1_500.jpg'
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/1.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/2.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/6.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/7.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/8.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/9.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/10.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/11.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/12.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/13.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/14.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/15.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/16.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/17.gif"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/18.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/21.jpg"
-]
-
-bad = [
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/0.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/1.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/2.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/3.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/4.gif"
-]
-
 eastasianwidth = require 'eastasianwidth'
 
 strpad = (str, count) ->
@@ -111,6 +90,9 @@ module.exports = (robot) ->
   robot.hear /bleach/i, (msg) ->
     msg.send msg.random bleach_poem
 
+  robot.hear /ktkr/i, (msg) ->
+    msg.send msg.random ktkr_text
+
   robot.hear /なよ$/, (msg) ->
     channel = msg.envelope.room
     request = msg.http("https://slack.com/api/chat.postMessage?token=#{process.env.SLACK_API_TOKEN}&channel=%23#{channel}&text=%3C%20%E5%BC%B1%E3%81%8F%E8%A6%8B%E3%81%88%E3%82%8B%E3%81%9E&username=%E8%97%8D%E6%9F%93%E6%83%A3%E5%8F%B3%E4%BB%8B&icon_url=https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F222%2F20074%2Fc9c07f06-3a6c-6cb4-1e81-5217b49a5184.png&pretty=1").get()
@@ -126,12 +108,6 @@ module.exports = (robot) ->
      message = msg.random takasan
      request = msg.http("https://slack.com/api/chat.postMessage?token=#{process.env.SLACK_API_TOKEN}&channel=%23#{channel}&text=#{message}&username=%E3%81%9F%E3%81%8B%E3%81%95%E3%82%93(bot)&icon_emoji=%3Atakasansmile%3A&pretty=1").get()
      request (err, res, body) ->
-
-  robot.hear /進捗どうですか/, (msg) ->
-    msg.send msg.random progress
-
-  robot.hear /進捗ダメです/, (msg) ->
-    msg.send msg.random bad
 
   robot.hear /突然の(.*)$/i, (msg) ->
     message = msg.match[1].replace /^\s+|\s+$/g, ''
@@ -164,3 +140,7 @@ module.exports = (robot) ->
     tanzaku.push "┃　┃"
     tanzaku.push "┗━┛"
     msg.send tanzaku.join "\n"
+
+  robot.hear /お前は(何|なに|ナニ)を/, (msg) ->
+    msg.send msg.random omaeha
+
