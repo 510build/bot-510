@@ -9,6 +9,7 @@
 
 omaeha = [
   "https://dl.dropboxusercontent.com/s/duj2wgbyaqge45b/6f0e791f.jpg",
+  "https://dl.dropboxusercontent.com/s/bv8bo2px3fn93gh/put.jpg",
 ]
 
 ktkr_text = [
