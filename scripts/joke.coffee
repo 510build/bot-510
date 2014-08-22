@@ -7,6 +7,10 @@
 # Notes:
 #   ネタ/ジョーク系のbot全般
 
+omaeha = [
+  "https://dl.dropboxusercontent.com/s/duj2wgbyaqge45b/6f0e791f.jpg",
+]
+
 ktkr_text = [
   "ｷﾀ━━ﾟ+.ヽ(≧▽≦)ﾉ.+ﾟ━━ ｯ !!!",
   "ｷﾀ━━(━(━(-( ( (ﾟ∀ﾟ) ) )-)━)━) ━━ !!!!!",
@@ -136,3 +140,7 @@ module.exports = (robot) ->
     tanzaku.push "┃　┃"
     tanzaku.push "┗━┛"
     msg.send tanzaku.join "\n"
+
+  robot.hear /お前は(何|なに|ナニ)を/, (msg) ->
+    msg.send msg.random omaeha
+
