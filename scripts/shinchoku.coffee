@@ -2,10 +2,10 @@
 #   shinchoku commands.
 #
 # Commands:
-#   進捗（どうですか|ダメです）
+#   進捗（どうですか|ダメです|いいです）
 #
 # Notes:
-#   進捗の具合 
+#   進捗の具合
 
 progress = [
   'http://livedoor.blogimg.jp/matometters/imgs/4/c/4cc416b4.jpg'
@@ -40,6 +40,15 @@ bad = [
   "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/4.gif"
 ]
 
+ok = [
+  "https://bauhaus-web.jp/hubot/ok/01.jpg"
+  "https://bauhaus-web.jp/hubot/ok/02.jpg"
+  "https://bauhaus-web.jp/hubot/ok/03.jpg"
+  "https://bauhaus-web.jp/hubot/ok/04.jpg"
+  "https://bauhaus-web.jp/hubot/ok/05.jpg"
+]
+
+
 module.exports = (robot) ->
 
   robot.hear /進捗どうですか/, (msg) ->
@@ -47,3 +56,7 @@ module.exports = (robot) ->
 
   robot.hear /進捗(ダメ|だめ)です/, (msg) ->
     msg.send msg.random bad
+
+  robot.hear /進捗(いい|良い|ok|OK)です/, (msg) ->
+    msg.send msg.random ok
+
