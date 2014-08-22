@@ -9,8 +9,8 @@
 #
 # Commands:
 #   /お(る|ら)ん?(か|や)/ - オフィスに誰がいるのか
-#   hubot おる - オフィスにいることにできる(最長10分)
-#   hubot 帰る - オフィスにいないことにできる(最長10分)
+#   hubot (おる|ただいま) - オフィスにいることにできる(最長10分)
+#   hubot (帰る|(い|行)ってきます) - オフィスにいないことにできる(最長10分)
 #   hubot orca add [user] [mac]
 #   hubot orca remove [user]
 #   hubot orca list
@@ -69,7 +69,7 @@ module.exports = (robot) ->
   robot.respond /orca list/i, (msg) ->
     putList(msg)
 
-  robot.respond /おる/, (msg) ->
+  robot.respond /(おる|ただいま)/, (msg) ->
     name = msg.envelope.user?.name
     orca = robot.brain.get "orca"
     for mac, user of orca.members
@@ -79,7 +79,7 @@ module.exports = (robot) ->
         robot.brain.save()
     msg.send msg.random ['えー、嘘じゃないよね？','はいはーい。いらっしゃいませー。']
 
-  robot.respond /帰る/, (msg) ->
+  robot.respond /(帰る|(い|行)ってきます)/, (msg) ->
     name = msg.envelope.user?.name
     orca = robot.brain.get "orca"
     for mac, user of orca.members
