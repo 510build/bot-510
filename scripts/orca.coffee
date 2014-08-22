@@ -8,7 +8,9 @@
 #   None
 #
 # Commands:
-#   おるん(か|や) - オフィスに誰がいるのか
+#   おるん?(か|や) - オフィスに誰がいるのか
+#   hubot おる - オフィスにいることにできる(最長10分)
+#   hubot 帰る - オフィスにいないことにできる(最長10分)
 #   hubot orca add [user] [mac]
 #   hubot orca remove [user]
 #   hubot orca list
@@ -67,7 +69,29 @@ module.exports = (robot) ->
   robot.respond /orca list/i, (msg) ->
     putList(msg)
 
-  robot.hear /おるん(か|や)/, (msg) ->
+  robot.respond /おる/, (msg) ->
+    name = msg.envelope.user?.name
+    orca = robot.brain.get "orca"
+    for mac, user of orca.members
+      if user == name
+        orca.macs.push mac
+        robot.brain.set "orca", orca
+        robot.brain.save()
+    msg.send msg.random ['えー、嘘じゃないよね？','はいはーい。いらっしゃいませー。']
+
+  robot.respond /帰る/, (msg) ->
+    name = msg.envelope.user?.name
+    orca = robot.brain.get "orca"
+    for mac, user of orca.members
+      if user == name
+        for i,m of orca.macs
+          if m == mac
+            orca.macs.splice(i,1)
+            robot.brain.set "orca", orca
+            robot.brain.save()
+    msg.send msg.random ['えー、帰っちゃうのー。','はいよー。おつかれさまです。']
+
+  robot.hear /おるん?(か|や)/, (msg) ->
     orca = robot.brain.get "orca"
     macs = robot.brain.data.macs
     users = []
