@@ -9,7 +9,7 @@ This version is designed to be deployed on [Heroku][heroku]. This README was gen
 ### Testing Hubot Locally
 
 You can test your hubot by running the following.
-
+ 
     % bin/hubot
 
 You'll see some start up output about where your scripts come from and a
