@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   おるん?(か|や) - オフィスに誰がいるのか
+#   /お(る|ら)ん?(か|や)/ - オフィスに誰がいるのか
 #   hubot おる - オフィスにいることにできる(最長10分)
 #   hubot 帰る - オフィスにいないことにできる(最長10分)
 #   hubot orca add [user] [mac]
@@ -91,7 +91,7 @@ module.exports = (robot) ->
             robot.brain.save()
     msg.send msg.random ['えー、帰っちゃうのー。','はいよー。おつかれさまです。']
 
-  robot.hear /おるん?(か|や)/, (msg) ->
+  robot.hear /お(る|ら)ん?(よ|か|や)/, (msg) ->
     orca = robot.brain.get "orca"
     macs = robot.brain.data.macs
     users = []
