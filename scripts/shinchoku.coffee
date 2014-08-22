@@ -8,44 +8,65 @@
 #   進捗の具合
 
 progress = [
-  'http://livedoor.blogimg.jp/matometters/imgs/4/c/4cc416b4.jpg'
-  'http://forum.shimarin.com/uploads/default/3/5a6b5c05cceb7cf3.png'
-  'http://37.media.tumblr.com/3497ded6d8b569cfe0d0152f8fc6bc9d/tumblr_mzyaeoXEIS1sckns5o1_500.jpg'
-  'http://draque-ch.com/wp-content/uploads/2014/06/bf80ec2b93465957a856e13a131555be.jpg'
-  'http://forum.shimarin.com/uploads/default/6/8b3c7003765d0f2e.jpg'
-  'http://38.media.tumblr.com/31ab4065305e3607b951332dde32b789/tumblr_mrkrlyMMIU1sckns5o1_500.jpg'
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/1.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/2.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/6.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/7.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/8.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/9.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/10.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/11.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/12.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/13.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/14.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/15.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/16.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/17.gif"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/18.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/21.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/01.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/02.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/03.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/04.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/05.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/06.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/07.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/08.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/09.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/10.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/11.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/12.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/13.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/14.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/15.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/16.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/17.gif"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/18.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/19.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/20.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/21.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/22.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/23.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/24.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/25.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/26.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/27.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/28.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/29.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/30.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/31.png"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/32.jpg"
 ]
 
 bad = [
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/0.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/1.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/2.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/3.jpg"
-  "https://dl.dropboxusercontent.com/u/96769324/img/shinchoku/dame/4.gif"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/01.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/02.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/03.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/04.gif"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/05.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/06.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/07.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/08.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/09.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/10.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/11.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/12.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/13.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/14.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/15.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/dame/16.jpg"
 ]
 
 ok = [
-  "https://bauhaus-web.jp/hubot/ok/01.jpg"
-  "https://bauhaus-web.jp/hubot/ok/02.jpg"
-  "https://bauhaus-web.jp/hubot/ok/03.jpg"
-  "https://bauhaus-web.jp/hubot/ok/04.jpg"
-  "https://bauhaus-web.jp/hubot/ok/05.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/ok/01.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/ok/02.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/ok/03.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/ok/04.jpg"
+  "https://dl.dropboxusercontent.com/u/96769324/img/hubot/ok/05.jpg"
 ]
 
 
