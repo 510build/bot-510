@@ -2,7 +2,7 @@
 #   Joke commands.
 #
 # Commands:
-#   ぬるぽ - You reply with, "ｶﾞｯ" When you post a "ぬるぽ" word.
+#   joke - 各種取り揃えております。
 #
 # Notes:
 #   ネタ/ジョーク系のbot全般
