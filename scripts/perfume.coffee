@@ -8,6 +8,9 @@
 #   None
 #
 # Commands:
+#   hubot perfume music - Perfume の MV をランダムに表示
+#   チョコレイト - ディスコと応えてくれます。３回に一回フィーバーします
+#   (くり返す|くりかえす|繰り返す) - このポリリズム
 #
 
 youtube_list = [
