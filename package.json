@@ -26,7 +26,6 @@
     "hubot-slack": "~3.2"
   },
   "engines": {
-    "iojs": "1.2.x",
     "npm": ">= 1.1.x"
   },
   "devDependencies": {
