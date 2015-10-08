@@ -21,15 +21,15 @@
     "url": "https://github.com/github/hubot.git"
   },
   "dependencies": {
-    "hubot": "^2.8.0",
+    "hubot": "^2.16.0",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-slack": "~3.2"
+    "eastasianwidth": "^0.1.0",
+    "hubot-slack": "^3.3.0"
   },
   "engines": {
     "npm": ">= 1.1.x"
   },
   "devDependencies": {
-    "eastasianwidth": "^0.1.0",
     "redis": "^0.11.0"
   }
 }
